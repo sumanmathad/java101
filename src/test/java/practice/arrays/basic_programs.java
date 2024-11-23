@@ -1,4 +1,4 @@
-package arrays;
+package practice.arrays;
 
 import org.junit.jupiter.api.Test;
 
@@ -27,9 +27,6 @@ public class basic_programs {
     void moveZeroesToEnd(){
         
     }
-
-
-
 
 
 

@@ -1,4 +1,4 @@
-package coreAPIs;
+package practice.coreAPIs;
 
 public class MathFunctions {
 
