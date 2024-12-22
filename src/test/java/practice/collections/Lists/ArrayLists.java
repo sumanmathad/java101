@@ -20,5 +20,17 @@ public class ArrayLists {
         System.out.println(anyList);
         //o/p > test, 1, true,1 -- insertion order is preserved and duplicates are allowed.
 
+        //define and add homogeneous data
+        List<String> stringList = new ArrayList<>();
+        stringList.add("one");
+        stringList.add(0,"first");
+
+        // returns boolean after adding value
+        System.out.println(stringList.add("two"));
+
+        // doesn't return any value when added with index
+        stringList.add(0,"updated after first");
+
+        System.out.println(stringList);
     }
 }
