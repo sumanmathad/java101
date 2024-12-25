@@ -3,6 +3,7 @@ package practice.collections.Lists;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ArrayLists {
@@ -33,4 +34,42 @@ public class ArrayLists {
 
         System.out.println(stringList);
     }
+
+    @Test
+    public void ArrayListMethods(){
+        ArrayList numbers = new ArrayList(List.of(0,1,2,3,4,5));
+        System.out.println(numbers);
+
+        System.out.println( "numbers array : "+numbers);
+        System.out.println("isEmpty : " +numbers.isEmpty());
+        System.out.println("contains(3) : "+numbers.contains(3));
+        System.out.println("size : " +numbers.size());
+
+        //public boolean add(E element)
+
+        System.out.println(numbers.add(6));
+        System.out.println(numbers);
+        //public void add(int index, E element)
+
+        numbers.add(0,-1);
+        System.out.println(numbers);
+
+        //public boolean remove(Object object)
+        System.out.println(numbers.remove(6));
+        //returns the removed object
+        int abc =6;
+        System.out.println(numbers.remove(abc));
+        System.out.println(numbers);
+        //public boolean isEmpty()
+        //public int size()
+        //public void clear()
+        //public boolean contains(Object object)
+        System.out.println(numbers.contains(-1));
+        System.out.println("Current status: "+numbers);
+        System.out.println(numbers.set(1,"zero"));
+        System.out.println("after set status: "+numbers);
+        Object[] arr=  numbers.toArray();
+        System.out.println(Arrays.toString(arr));
+    }
+
 }
