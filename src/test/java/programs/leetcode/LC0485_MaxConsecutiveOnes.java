@@ -1,26 +1,29 @@
 package programs.leetcode;
 
-public class LC0485_MaxConsecutiveOnes {
-    public static void main(String[] args) {
-        int[] nums = {1,0,1,1,0,1};
-        System.out.println(findMaxConsecutiveOnes(nums));
-    }
+import org.junit.jupiter.api.Test;
 
-    public static int findMaxConsecutiveOnes(int[] nums) {
-        int count=0, maxCount=0, l=nums.length;
-        for(int i=0;i<l;i++){
-            if (nums[i]==1){
+public class LC0485_MaxConsecutiveOnes {
+
+    @Test
+    void maxConsecutiveOnes(){
+        int[] nums = {1,0,1,1,1,1,1,1,1,0,1,1,1,1};
+
+        int maxCount=0,count =0;
+
+        for (int i =0; i<nums.length;i++){
+
+            if(nums[i]==1){
                 count++;
             }
             else {
-                maxCount = Math.max(count,maxCount);
-                count=0;
+                    maxCount=Math.max(count,maxCount);
+                    count=0;
+                }
             }
+        System.out.println( Math.max(count,maxCount));
         }
 
-        return Math.max(count,maxCount);
     }
 
 
-}
 
