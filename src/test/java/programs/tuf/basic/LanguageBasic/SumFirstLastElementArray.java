@@ -1,4 +1,4 @@
-package programs.tuf.BeginnerPrograms.LanguageBasic;
+package programs.tuf.basic.LanguageBasic;
 
 public class SumFirstLastElementArray {
 

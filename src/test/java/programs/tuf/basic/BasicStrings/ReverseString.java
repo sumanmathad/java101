@@ -1,7 +1,5 @@
-package programs.tuf.BeginnerPrograms.BasicStrings;
+package programs.tuf.basic.BasicStrings;
 
-import java.sql.SQLOutput;
-import java.util.Arrays;
 import java.util.Stack;
 import java.util.Vector;
 
