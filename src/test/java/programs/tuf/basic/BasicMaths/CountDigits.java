@@ -4,7 +4,7 @@ public class CountDigits {
 
     public static void main(String[] args) {
 
-        int n = 465;
+        int n = 0;
         System.out.println(countDigitByDivide(n));
         System.out.println(countDigitByFormula(n));
 
